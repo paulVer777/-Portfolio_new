@@ -1,1 +1,36 @@
 //in layout we put global footer, header, all global pieces, navigation etc//
+
+.header {
+
+  position: relative;
+  height: 90vh;
+
+  &__text-box {
+
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+
+
+
+  }
+  &__img-box {
+    display: inline-block;
+    position: absolute;
+    right: 6.3rem;
+    top:-1.3rem;
+    animation: jump-jump 3s ease-in ;
+
+  }
+
+  &__img {
+    width: 4.5rem;
+
+  }
+  &__span{
+    display: inline-block;
+    animation: pleaseMoveDown .5s ease-in 1.61s;
+  }
+
+}
