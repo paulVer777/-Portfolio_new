@@ -4,6 +4,13 @@
 
   position: relative;
   height: 90vh;
+  background-image: linear-gradient(to right bottom,rgba($color-green-dark,1.0),rgba($color-green-light,.8));
+  //background-image: linear-gradient(to right bottom,rgba(223, 228, 234,0.2), rgba(223, 228, 234,0.2)),
+  // url("../../img/header.jpg");
+  background-size: cover;
+
+
+  clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
 
   &__text-box {
 
@@ -26,8 +33,13 @@
 
   &__img {
     width: 4.5rem;
+    position: relative;
 
+    &:hover{
+      transform: rotate(180deg) scale(1.2);
+    }
   }
+
   &__span{
     display: inline-block;
     animation: pleaseMoveDown .5s ease-in 1.61s;

@@ -1,0 +1,35 @@
+
+.composition {
+  position: relative;
+  height: 20rem;
+  &__picture {
+
+    width: 20%;
+    position: absolute;
+    outline: .2rem solid $color-green-light;
+    outline-offset: 2rem; //distance beetwen frame and element
+
+    &--1 {
+      left: 0;
+      top: 10rem;
+
+    }
+
+    &--2 {
+      left: 35%;
+      top: -5rem;
+
+    }
+
+    &--3 {
+      right: 5.5rem;
+      top: 10rem;
+    }
+    &--4 {
+      left: 35%;
+      top: 25rem;
+    }
+
+  }
+
+}

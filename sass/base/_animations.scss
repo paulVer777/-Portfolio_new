@@ -1,12 +1,12 @@
 @keyframes jump-jump {
 
   0% {
-
+    filter: blur(.6rem);
     transform: translateY(-40rem);
   }
   50% {
     transform: translateY(0);
-
+    filter: none;
   }
   57% {
 
@@ -15,26 +15,19 @@
   74% {
     transform: translateY(0);
   }
-
+  80% {
+    transform: translateY(-.7rem);
+  }
+  85% {
+    transform: translateY(0);
+  }
+  90%{
+  transform: translateY(-.6rem);
 }
-
-//  0% {
-//
-//  }
-//  25% {
-//    transform: translateY(-4rem);
-//  }
-//  50% {
-//
-//    transform: translate(0);
-//  }
-//  75%{
-//    transform: translateY(.5rem);
-//  }
-//  100%{
-//    transform: translateY(0);
-//  }
-//}
+  100%{
+    transform: translateY(0);
+  }
+}
 
 @keyframes pleaseMoveDown {
 
@@ -43,6 +36,7 @@
   }
   50% {
     transform: translateY(.5rem);
+    filter: blur(.1rem);
   }
   100% {
 
@@ -61,4 +55,31 @@
     transform: translate(0);
   }
 
+}
+
+@keyframes planet {
+
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+
+  }
+
+}
+
+@keyframes flying {
+  0%{
+
+  }
+  50%{
+    transform: translateX(100vw);
+
+  }
+  52%{
+    transform: rotate(180deg)
+  }
+  100%{
+    transform: translateX(0);
+  }
 }

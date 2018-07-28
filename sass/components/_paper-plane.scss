@@ -1,0 +1,11 @@
+
+.paper-plane{
+  position: absolute;
+  animation: flying 10s ease-in-out;
+  &__img{
+    transform:rotate(20deg);
+
+  }
+
+
+}
