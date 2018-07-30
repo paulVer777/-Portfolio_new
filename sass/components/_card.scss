@@ -1,15 +1,11 @@
 //////////Funcionality//////
-
 .card {
-
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
   height: 45rem; // needed to define height because all child elements have position absolute
   // and parents element (card) height collapses.
-
   &__side {
-
     height: 45rem;
     transition: all 1.5s ease;
     font-size: 2rem;
@@ -21,90 +17,63 @@
     border-radius: 3px;
     box-shadow: .5rem 1rem 2rem rgba($color-black, .1);
     overflow: hidden;
-
     &--front {
       background-color: $color-grey-light;
-
     }
     &--back {
       transform: rotateY(-180deg);
-
       &-1 {
         background-image: linear-gradient(to right bottom, rgba($color-green-light, .8), rgba($color-green-dark, .9));
-
       }
       &-2 {
         background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-
       }
-
-
       &-3 {
         background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-
       }
     }
   }
-
-  &:hover &__side--front { //when we hover card the child element rotate, and perspective works.
-
+  &:hover &__side--front {
+    //when we hover card the child element rotate, and perspective works.
     transform: rotateY(180deg);
-
   }
-  &:hover &__side--back { //when we hover card the child element rotate, and perspective works.
-
+  &:hover &__side--back {
+    //when we hover card the child element rotate, and perspective works.
     transform: rotateY(0);
-
-  }
-
-  ///////////Front side styling///////////////
-
+  } ///////////Front side styling///////////////
   &__picture {
-
     width: 100%;
     height: 45%;
     overflow: hidden;
     background-size: cover;
     background-position: center;
-
-
     &--1 {
       background-image: url("../img/Fat.png");
     }
     &--2 {
       background-image: url("../img/events.jpg");
-
     }
     &--3 {
       background-image: url("../img/pjc.png");
-
     }
-
   }
-
   &__heading {
     font-size: 2.5rem;
     text-transform: uppercase;
     text-align: center;
     font-weight: bolder;
   }
-
   &__details {
-
     ul {
       padding: 2rem;
       text-align: center;
       list-style: none;
-
       li {
-
         border-bottom: .1px solid $color-grey-dark;
         margin-bottom: .5rem;
         padding: .5rem 0;
       }
-
     }
-
   }
   &__cta {
     text-align: center;
@@ -113,5 +82,4 @@
     left: 50%;
     transform: translateX(-50%);
   }
-
 }

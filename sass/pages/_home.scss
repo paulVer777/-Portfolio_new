@@ -63,5 +63,19 @@
       margin-top: 1rem;
       font-size: 2rem;
     }
+    a {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $color-grey-dark;
+        display: inline-block;
+        padding-bottom: .2rem;
+        border-bottom: 2px solid $color-grey-dark;
+        transition:all .3s;
+      }
+      &:hover {
+        border-bottom: 2px solid $color-green-dark;
+      }
+    }
   }
 }

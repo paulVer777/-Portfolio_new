@@ -162,6 +162,15 @@ body {
     .section-contact .contact-box__caption {
       margin-top: 1rem;
       font-size: 2rem; }
+    .section-contact .contact-box a:link, .section-contact .contact-box a:visited {
+      text-decoration: none;
+      color: #777;
+      display: inline-block;
+      padding-bottom: .2rem;
+      border-bottom: 2px solid #777;
+      transition: all .3s; }
+    .section-contact .contact-box a:hover {
+      border-bottom: 2px solid #10AC84; }
 
 .header {
   position: relative;
