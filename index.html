@@ -17,7 +17,7 @@
 
 <body>
 
-    <header class="header">
+    <header class="header" id="home">
 
         <div class="header__text-box">
             <div class="header__img-box">
@@ -30,7 +30,7 @@
 
 
     <main>
-        <section class="section-about u-margin-bottom-large">
+        <section class="section-about u-margin-bottom-large" id="about">
 
             <div class="u-text-center u-margin-bottom-large">
                 <h2 class="heading-secondary heading-secondary--bg">About me</h2>
@@ -49,11 +49,11 @@
                     <div class="about__text">
 
 
-                        <h3 class="heading-tertiary u-margin-bottom-small">Hello my name is Pawel,</h3>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Hello,</h3>
 
-                        <p class="paragraph"> i'm a Front-End Developer. Some time ago I've started to learn front-end technologies and discovered
-                            that I really like it. Hence I decided to turn it into lifetime journey. I mainly create websites
-                            and web applications.</p>
+                        <p class="paragraph">my name is Pawel and i'm a Front-end Developer. Some time ago I've started to learn front-end technologies
+                            and discovered that I really like it. Hence I decided to turn it into lifetime journey. I mainly
+                            create websites and web applications.</p>
 
                         <p class="paragraph">Apart from coding, I love to play guitar, watch movies and listen to music. It gives me a huge amount
                             of inspiration
@@ -68,7 +68,7 @@
 
 
         </section>
-        <section class="section-technologies">
+        <section class="section-technologies" id="technologies">
 
             <div class="u-text-center u-margin-bottom-large">
                 <h2 class="heading-secondary heading-secondary--bg heading-secondary--bg-tech">Technologies i use</h2>
@@ -171,7 +171,7 @@
             </div>
         </section>
 
-        <section class="section-experience">
+        <section class="section-experience" id="experience">
 
             <div class="u-text-center u-margin-bottom-medium">
                 <h2 class="heading-secondary heading-secondary--bg u-margin-bottom-medium">Experience</h2>
@@ -194,7 +194,7 @@
 
                     <h3 class="heading-tertiary u-margin-bottom-medium">Junior Front-end Developer course (320h) at infoShare Academy:</h3>
                     <ul class="experience-list">
-                        <li class="experience-list__item">Learning Java Script (ES5 & ES6), React + Redux, CSS3, RWD, HTML5, Bootstrap4, GIT, REST API, jQuery,
+                        <li class="experience-list__item">Learning JavaScript (ES5 & ES6), React-Redux, CSS3, RWD, HTML5, Bootstrap4, GIT, REST API, jQuery,
                             JSON
                         </li>
                         <li class="experience-list__item">Working in SCRUM team of 4 people</li>
@@ -231,7 +231,7 @@
                         </div>
                         <div class="card__side card__side--back card__side--back-1">
                             <div class="card__cta">
-                                <a href="#" class="btn">Check</a>
+                                <a href="http://app.fatcash.jfddl4.is-academy.pl/" target="new_blanket" class="btn">Check</a>
                             </div>
                         </div>
 
@@ -257,7 +257,7 @@
                         </div>
                         <div class="card__side card__side--back card__side--back-2">
                             <div class="card__cta">
-                                <a href="#" class="btn">Check</a>
+                                <a href="https://github.com/paulVer777/letsGoApp-react" class="btn">Check</a>
                             </div>
                         </div>
                     </div>
@@ -283,14 +283,14 @@
                         <div class="card__side card__side--back card__side--back-3">
 
                             <div class="card__cta">
-                                <a href="#" class="btn">Check</a>
+                                <a href="http://www.pjc.com.pl/" target="new_blanket" class="btn">Check</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section-contact">
+        <section class="section-contact" id="contact">
             <div class="u-text-center u-margin-bottom-medium">
                 <h2 class="heading-secondary heading-secondary--bg u-margin-bottom-medium">Contact</h2>
             </div>
@@ -324,17 +324,44 @@
         </section>
     </main>
 
-
-
     <footer class="footer">
         <div class="row">
 
-        
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul>
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#technologies">Technologies</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#experience">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-1-of-2">
+                <div class="footer__rights">
+                    Icons downloaded from www.flaticon.com
+                </div>
+            </div>
         </div>
-
-
-
+        <p class="footer__paragraph">Made in 2018 &copy; All rights reserved</p>
     </footer>
+
+
 
 </body>
 
