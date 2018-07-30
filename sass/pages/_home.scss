@@ -1,7 +1,7 @@
 // we put section about here because its very specific to homepage. nowhere else
 // there will be section "about" cause its appears always in homepage, so this is specific style of our hompepage
 .section-about {
-  padding: 20rem 0 25rem 0;
+  padding: 15rem 0 25rem 0;
   font-size: $font-size-default;
   background-color: rgba($color-grey-light, 1.0);
   margin-top: -10rem;
@@ -21,7 +21,7 @@
 }
 
 .section-technologies {
-  padding: 15rem 0;
+  padding: 8rem 0;
   margin-top: -19rem;
   background-color: white;
   .tech-box {
@@ -37,7 +37,7 @@
 }
 
 .section-experience {
-  padding: 12rem 0 25rem 0;
+  padding: 8rem 0 10rem 0;
   background-color: $color-grey-light;
   .experience-list {
     font-size: 1.8rem;
@@ -48,11 +48,11 @@
 }
 
 .section-projects {
-  padding: 15rem 0;
+  padding: 8rem 0 10rem 0;
 }
 
 .section-contact {
-  padding: 15rem 0;
+  padding: 8em 0 15rem 0;
   background-color: $color-grey-light;
   .contact-box {
     text-align: center;

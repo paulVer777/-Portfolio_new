@@ -28,17 +28,12 @@
               border-radius: 3px;
             }
           }
-        } // &:hover {
-        //   background-color: $color-white;
-        //    color: $color-black;
-        // }
-        // &:not(:last-child) {
-        //   margin-right: 1rem;
-        // }
+        }
       }
     }
   }
   &__rights {
+   margin-left: 5rem;
     padding: 1rem;
     display: inline-block;
     border-top: 2px solid $color-grey-light;
