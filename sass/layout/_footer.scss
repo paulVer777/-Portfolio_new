@@ -1,6 +1,8 @@
 .footer {
   padding: 10rem 0 1rem 0;
-  background-image: linear-gradient(to right bottom, rgba($color-green-dark, 1.0), rgba($color-green-light, .8));
+  background-image: linear-gradient(to right bottom,rgba($color-green-dark,.7),rgba($color-green-light,.7)),
+  url(../img/matrix.jpg);
+  background-size: cover;
   font-weight: 400;
   font-size: 1.7rem;
   color: $color-grey-light;
@@ -24,7 +26,7 @@
             display: block;
             &:hover {
               background-color: $color-white;
-              color: $color-black;
+              color: $color-green-dark;
               border-radius: 3px;
             }
           }

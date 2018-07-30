@@ -15,10 +15,10 @@
     width: 100%;
     backface-visibility: hidden;
     border-radius: 3px;
-    box-shadow: .5rem 1rem 2rem rgba($color-black, .1);
+    box-shadow: .5rem 1rem 1rem rgba($color-black, .1);
     overflow: hidden;
     &--front {
-      background-color: $color-grey-light;
+      background-color: $color-white;
     }
     &--back {
       transform: rotateY(-180deg);

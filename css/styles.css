@@ -175,7 +175,7 @@ body {
 .header {
   position: relative;
   height: 90vh;
-  background-image: linear-gradient(to right bottom, #10ac84, rgba(16, 172, 132, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(16, 172, 132, 0.7), rgba(16, 172, 132, 0.7)), url(../img/matrix.jpg);
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
   .header__text-box {
@@ -272,10 +272,10 @@ body {
     width: 100%;
     backface-visibility: hidden;
     border-radius: 3px;
-    box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.1);
     overflow: hidden; }
     .card__side--front {
-      background-color: #F1F2F6; }
+      background-color: #fff; }
     .card__side--back {
       transform: rotateY(-180deg); }
       .card__side--back-1 {
@@ -375,7 +375,8 @@ body {
 
 .footer {
   padding: 10rem 0 1rem 0;
-  background-image: linear-gradient(to right bottom, #10ac84, rgba(16, 172, 132, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(16, 172, 132, 0.7), rgba(16, 172, 132, 0.7)), url(../img/matrix.jpg);
+  background-size: cover;
   font-weight: 400;
   font-size: 1.7rem;
   color: #F1F2F6; }
@@ -397,7 +398,7 @@ body {
           display: block; }
           .footer__navigation ul li a:link:hover, .footer__navigation ul li a:visited:hover {
             background-color: #fff;
-            color: #000;
+            color: #10AC84;
             border-radius: 3px; }
   .footer__rights {
     margin-left: 5rem;

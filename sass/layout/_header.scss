@@ -4,7 +4,8 @@
 
   position: relative;
   height: 90vh;
-  background-image: linear-gradient(to right bottom,rgba($color-green-dark,1.0),rgba($color-green-light,.8));
+  background-image: linear-gradient(to right bottom,rgba($color-green-dark,.7),rgba($color-green-light,.7)),
+  url(../img/matrix.jpg);
   //background-image: linear-gradient(to right bottom,rgba(223, 228, 234,0.2), rgba(223, 228, 234,0.2)),
   // url("../../img/header.jpg");
   background-size: cover;
