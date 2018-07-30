@@ -49,14 +49,12 @@
       font-size: 1.5rem;
 
     }
-
   }
 }
 
 .section-experience {
   padding: 12rem 0 25rem 0;
   background-color: $color-grey-light;
-}
 
 .experience-list{
 
@@ -66,14 +64,36 @@
     margin-bottom: 2rem;
 
   }
+}}
 
-}
+
 
 
 .section-projects{
 
   padding: 15rem 0;
 
+}
 
 
+.section-contact{
+
+padding: 15rem 0;
+background-color: $color-grey-light;
+
+
+.contact-box{
+
+text-align: center;
+
+&__icon{
+
+font-size: 6rem;
+
+}
+&__caption{
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+}
 }

@@ -144,14 +144,24 @@ body {
 .section-experience {
   padding: 12rem 0 25rem 0;
   background-color: #F1F2F6; }
-
-.experience-list {
-  font-size: 1.8rem; }
-  .experience-list__item {
-    margin-bottom: 2rem; }
+  .section-experience .experience-list {
+    font-size: 1.8rem; }
+    .section-experience .experience-list__item {
+      margin-bottom: 2rem; }
 
 .section-projects {
   padding: 15rem 0; }
+
+.section-contact {
+  padding: 15rem 0;
+  background-color: #F1F2F6; }
+  .section-contact .contact-box {
+    text-align: center; }
+    .section-contact .contact-box__icon {
+      font-size: 6rem; }
+    .section-contact .contact-box__caption {
+      margin-top: 1rem;
+      font-size: 2rem; }
 
 .header {
   position: relative;
@@ -353,3 +363,7 @@ body {
 .btn-text:active {
   transform: translateY(-0.2rem);
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5); }
+
+.footer {
+  padding: 10rem;
+  background-image: linear-gradient(to right bottom, #10ac84, rgba(16, 172, 132, 0.8)); }
