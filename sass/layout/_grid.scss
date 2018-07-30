@@ -27,11 +27,11 @@
 
   .col-1-of-3 {
     width: calc((100% - 2 * (#{$gutter-horizontal})) / 3);
-    background-color: orangered;
+
   }
   .col-2-of-3 {
     width: calc(2 * ((100% - 2 * (#{$gutter-horizontal})) / 3) + #{$gutter-horizontal});
-    background-color: orangered;
+
   }
 
   .col-1-of-4 {
