@@ -154,13 +154,9 @@ body {
   font-size: 1.8rem;
   background-color: #f1f2f6;
   margin-top: -10rem; }
-
-.about {
-  position: relative; }
-  @media (max-width: 56.25em) {
-    .about {
-      padding: 3rem; } }
-  .about__shape {
+  .section-about .about-text {
+    padding: 2rem; }
+  .section-about .about-photo-box {
     width: 30rem;
     height: 35rem;
     overflow: hidden;
@@ -168,7 +164,7 @@ body {
     transform: translateX(-2rem);
     border-radius: 5px;
     box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .about__button-box {
+  .section-about .about-button-box {
     position: relative;
     padding: 0 6rem; }
 

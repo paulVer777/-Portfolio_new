@@ -5,19 +5,10 @@
   font-size: $font-size-default;
   background-color: rgba($color-grey-light, 1.0);
   margin-top: -10rem;
-  
-}
-
-.about {
-  position: relative;
-  
-  @include respond(tab-port){
-  padding: 3rem;
-
-
+  .about-text {
+    padding: 2rem;
   }
-  
-  &__shape {
+  .about-photo-box {
     width: 30rem;
     height: 35rem;
     overflow: hidden; //border-radius: 50%;
@@ -26,11 +17,10 @@
     border-radius: 5px;
     box-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
   }
-  &__button-box{
+  .about-button-box {
     position: relative;
     padding: 0 6rem;
   }
-
 }
 
 .section-technologies {
