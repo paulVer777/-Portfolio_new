@@ -43,16 +43,19 @@
     text-align: center;
     background-color: $color-green-light;
     opacity: .9;
+    position: relative;
+    display: inline-block;
   }
   &--cv {
     left:80%;
     font-size: 2rem;
     font-weight: bolder;
+    position: relative;
 
-  // @include respond (tab-port){
-  //   top:48rem;
-
-  // }
+  @include respond (tab-port){
+    left:10%;
+    
+  }
 
     &:hover {
       transform: translateY(-.5rem);
