@@ -45,11 +45,15 @@
     opacity: .9;
   }
   &--cv {
-    position: absolute;
-    right: 10rem;
-    top: 35rem;
+    left:80%;
     font-size: 2rem;
     font-weight: bolder;
+
+  // @include respond (tab-port){
+  //   top:48rem;
+
+  // }
+
     &:hover {
       transform: translateY(-.5rem);
       box-shadow: 0 1rem 2rem rgba($color-black, .2);

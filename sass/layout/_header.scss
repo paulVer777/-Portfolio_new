@@ -30,11 +30,20 @@
     top:-1.3rem;
     animation: jump-jump 3s ease-in ;
 
+    @include respond (phone){
+      right: 3.7rem;
+      top:-1.5rem;
+    }
+
   }
 
   &__img {
     width: 4.5rem;
     position: relative;
+
+    @include respond (phone){
+      width: 3.5rem;
+    }
 
     &:hover{
       transform: rotate(180deg) scale(1.2);
