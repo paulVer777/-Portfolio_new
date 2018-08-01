@@ -81,104 +81,92 @@
     left: 50%;
     transform: translateX(-50%);
   }
-
-
-@include respond (tab-port){
-
-  &{
-    height: auto;
-    box-shadow: .5rem 1rem 1rem rgba($color-black, .1);
-    overflow: hidden;
-  }
-
-  &__side {
-    
-    transition: all 1.5s ease;
-    font-size: 2rem;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    backface-visibility: hidden;
-    border-radius: 3px;
-  
-    overflow: hidden;
-    &--front {
-      background-color: $color-white;
-      height: 60rem;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
+  @include respond (tab-port) {
+    & {
+      height: auto;
+      box-shadow: .5rem 1rem 1rem rgba($color-black, .2);
+      overflow: hidden;
+      border-radius: 3px;
     }
-    &--back {
-      transform: rotateY(0);
+    &__side {
+      transition: all 1.5s ease;
+      font-size: 2rem;
       position: relative;
-      height: 20rem;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      clip-path: polygon(0 25%,100% 0,100% 100%,0 100%);
-      margin-top:-5rem;
-      &-1 {
-        background-image: linear-gradient(to right bottom, rgba($color-green-light,1), rgba($color-green-dark,1));
+      top: 0;
+      left: 0;
+      width: 100%;
+      backface-visibility: hidden;
+      border-radius: 3px;
+      overflow: hidden;
+      &--front {
+        background-color: $color-white;
+        height: 60rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
       }
-      &-2 {
-        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-      }
-      &-3 {
-        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+      &--back {
+        transform: rotateY(0);
+        position: relative;
+        width: 100%;
+        height: 20rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+        margin-top: -5rem;
+        backface-visibility: hidden;
+        &-1 {
+          background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark);
+        }
+        &-2 {
+          background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+        }
+        &-3 {
+          background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+        }
       }
     }
-  }
-  &:hover &__side--front {
-    //when we hover card the child element rotate, and perspective works.
-    transform: rotateY(0);
-  }
-  &:hover &__side--back {
+    &:hover &__side--front {
+      //when we hover card the child element rotate, and perspective works.
+      transform: rotateY(0);
+    }
+    &:hover &__side--back {
+      transform: rotateY(0);
+    } ///////////Front side styling///////////////
+    &__picture {
+      width: 100%;
+      height: 50%;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      &--1 {
+        background-image: url("../img/Fat.png");
+      }
+      &--2 {
+        background-image: url("../img/events.jpg");
+      }
+      &--3 {
+        background-image: url("../img/pjc.png");
+      }
+    }
     
-    transform: rotateY(0);
-  } ///////////Front side styling///////////////
-  &__picture {
-    width: 100%;
-    height: 50%;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    &--1 {
-      background-image: url("../img/Fat.png");
-      
-    }
-    &--2 {
-      background-image: url("../img/events.jpg");
-    }
-    &--3 {
-      background-image: url("../img/pjc.png");
-    }
-  }
-  &__heading {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bolder;
-  }
-  &__details {
-    ul {
-      padding: 2rem;
-      text-align: center;
-      list-style: none;
-      li {
-        border-bottom: .1px solid $color-grey-dark;
-        margin-bottom: 3rem;
-        padding: .5rem 0;
+    &__details {
+      ul {
+        padding: 2rem;
+        text-align: center;
+        list-style: none;
+        li {
+          border-bottom: .1px solid $color-grey-dark;
+          margin-bottom: 3rem;
+          padding: .5rem 0;
+        }
       }
     }
+    &__cta {
+      text-align: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
-  &__cta {
-    text-align: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
-}
-
-
 }

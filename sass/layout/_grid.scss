@@ -5,45 +5,24 @@
     //selects all except last one
     margin-bottom: $gutter-vertical;
   }
-
-
-
-
-@include respond (tab-port) {
-   max-width: 70rem;
+  @include respond (tab-port) {
+    max-width: 70rem;
   }
-
-
-
   @include clearfix;
   [class^="col-"] {
     //selects all classes which starts from 'col-' (*-contain,$-end with col)
     float: left;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+      @include respond (tab-port) {}
+    }
+    &:not([class*="4"]) {
       @include respond (tab-port) {
-       
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5rem;
       }
     }
-   
-   &:not([class*="4"]){
-
- @include respond (tab-port) {
-      width: 100%;
-       margin-right: 0;
-       margin-bottom:5rem;
-    }
-
-   }
-
-   
-   
-
-
-
-   
-   
-   
   }
   .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);

@@ -1,62 +1,43 @@
 //in layout we put global footer, header, all global pieces, navigation etc//
-
 .header {
-
   position: relative;
   height: 90vh;
-  background-image: linear-gradient(to right bottom,rgba($color-green-dark,.7),rgba($color-green-light,.7)),
-  url(../img/matrix.jpg);
-  //background-image: linear-gradient(to right bottom,rgba(223, 228, 234,0.2), rgba(223, 228, 234,0.2)),
-  // url("../../img/header.jpg");
+  background-image: linear-gradient(to right bottom, rgba($color-green-dark, .7), rgba($color-green-light, .7)), url(../img/matrix.jpeg); //background-image: linear-gradient(to right bottom,rgba(223, 228, 234,0.2), rgba(223, 228, 234,0.2)),
+  
   background-size: cover;
-
-
-  clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
-
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   &__text-box {
-
     position: absolute;
     top: 25%;
     left: 50%;
     transform: translate(-50%);
-    
-    @include respond (phone){
-    top:35%;
-
+    @include respond (phone) {
+      top: 35%;
     }
-
-
   }
   &__img-box {
     display: inline-block;
     position: absolute;
     right: 6.3rem;
-    top:-1.3rem;
-    animation: jump-jump 3s ease-in ;
-
-    @include respond (phone){
+    top: -1.3rem;
+    animation: jump-jump 3s ease-in;
+    @include respond (phone) {
       right: 3.7rem;
-      top:-1.5rem;
+      top: -1.5rem;
     }
-
   }
-
   &__img {
     width: 4.5rem;
     position: relative;
-
-    @include respond (phone){
+    @include respond (phone) {
       width: 3.5rem;
     }
-
-    &:hover{
+    &:hover {
       transform: rotate(180deg) scale(1.2);
     }
   }
-
-  &__span{
+  &__span {
     display: inline-block;
     animation: pleaseMoveDown .5s ease-in 1.61s;
   }
-
 }

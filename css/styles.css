@@ -163,30 +163,30 @@ body {
     @media (max-width: 37.5em) {
       .section-about .about-text {
         padding: 4rem; } }
-  .section-about .photo-box {
+  .section-about .about-photo-box {
     height: 100%;
     padding: 0 1rem;
     min-width: 100%;
     position: relative; }
-    .section-about .photo-box::after {
+    .section-about .about-photo-box::after {
       content: "";
       display: table;
       clear: both; }
-  .section-about .about-photo-box {
-    width: 30rem;
-    height: 35rem;
-    overflow: hidden;
-    float: left;
-    transform: translateX(-2rem);
-    border-radius: 5px;
-    box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
-    background-image: url(../img/profilephoto.jpeg);
-    background-size: cover; }
-    @media (max-width: 56.25em) {
-      .section-about .about-photo-box {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%); } }
+    .section-about .about-photo-box__img {
+      width: 30rem;
+      height: 35rem;
+      overflow: hidden;
+      float: left;
+      transform: translateX(-2rem);
+      border-radius: 5px;
+      box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+      background-image: url(../img/profilephoto.jpeg);
+      background-size: cover; }
+      @media (max-width: 56.25em) {
+        .section-about .about-photo-box__img {
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%); } }
   .section-about .about-button-box {
     position: relative;
     padding: 0 6rem; }
@@ -242,7 +242,7 @@ body {
 .header {
   position: relative;
   height: 90vh;
-  background-image: linear-gradient(to right bottom, rgba(16, 172, 132, 0.7), rgba(16, 172, 132, 0.7)), url(../img/matrix.jpg);
+  background-image: linear-gradient(to right bottom, rgba(16, 172, 132, 0.7), rgba(16, 172, 132, 0.7)), url(../img/matrix.jpeg);
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
   .header__text-box {
@@ -426,8 +426,9 @@ body {
   @media (max-width: 56.25em) {
     .card {
       height: auto;
-      box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.1);
-      overflow: hidden; }
+      box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      border-radius: 3px; }
     .card__side {
       transition: all 1.5s ease;
       font-size: 2rem;
@@ -446,13 +447,15 @@ body {
       .card__side--back {
         transform: rotateY(0);
         position: relative;
+        width: 100%;
         height: 20rem;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
-        margin-top: -5rem; }
+        margin-top: -5rem;
+        backface-visibility: hidden; }
         .card__side--back-1 {
-          background-image: linear-gradient(to right bottom, #10ac84, #10ac84); }
+          background-image: linear-gradient(to right bottom, #10AC84, #10AC84); }
         .card__side--back-2 {
           background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
         .card__side--back-3 {
@@ -473,11 +476,6 @@ body {
         background-image: url("../img/events.jpg"); }
       .card__picture--3 {
         background-image: url("../img/pjc.png"); }
-    .card__heading {
-      font-size: 2.5rem;
-      text-transform: uppercase;
-      text-align: center;
-      font-weight: bolder; }
     .card__details ul {
       padding: 2rem;
       text-align: center;
@@ -552,7 +550,7 @@ body {
 
 .footer {
   padding: 10rem 3rem 1rem 3rem;
-  background-image: linear-gradient(to right bottom, rgba(16, 172, 132, 0.7), rgba(16, 172, 132, 0.7)), url(../img/matrix.jpg);
+  background-image: linear-gradient(to right bottom, rgba(16, 172, 132, 0.7), rgba(16, 172, 132, 0.7)), url(../img/matrix.jpeg);
   background-size: cover;
   font-weight: 400;
   font-size: 1.7rem;
