@@ -188,9 +188,14 @@ body {
     padding: 0 6rem; }
 
 .section-technologies {
-  padding: 8rem 0;
+  padding: 8rem 4rem;
   margin-top: -19rem;
-  background-color: white; }
+  background-color: white;
+  text-align: center; }
+  .section-technologies .technologies-box::after {
+    content: "";
+    display: table;
+    clear: both; }
   .section-technologies .tech-box {
     text-align: center; }
     .section-technologies .tech-box__icon {
@@ -200,7 +205,7 @@ body {
       font-size: 1.5rem; }
 
 .section-experience {
-  padding: 8rem 0 10rem 2rem;
+  padding: 8rem 5rem 10rem 5rem;
   background-color: #F1F2F6; }
   .section-experience .experience-list {
     font-size: 1.8rem; }
@@ -241,6 +246,9 @@ body {
     top: 25%;
     left: 50%;
     transform: translate(-50%); }
+    @media (max-width: 37.5em) {
+      .header__text-box {
+        top: 35%; } }
   .header__img-box {
     display: inline-block;
     position: absolute;
@@ -279,12 +287,11 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media (max-width: 56.25em) {
-        .row [class^="col-"]:not(:last-child) {
-          margin-right: 0; } }
     @media (max-width: 56.25em) {
-      .row [class^="col-"] {
-        width: 100% !important; } }
+      .row [class^="col-"]:not([class*="4"]) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5rem; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -309,11 +316,19 @@ body {
   border-radius: 50%;
   position: relative;
   animation: planet 5s infinite cubic-bezier(0.99, 1, 0, -0.01); }
+  .rotation__img {
+    width: 2rem; }
+  @media (max-width: 37.5em) {
+    .rotation--tech {
+      width: 7rem;
+      height: 7rem; } }
 
 .composition {
   position: relative;
-  height: 20rem;
-  margin-bottom: 15rem; }
+  height: 20rem; }
+  @media (max-width: 56.25em) {
+    .composition {
+      margin-bottom: 27rem; } }
   .composition__picture {
     width: 20%;
     position: absolute;
@@ -325,12 +340,23 @@ body {
     .composition__picture--2 {
       left: 35%;
       top: -5rem; }
+      @media (max-width: 56.25em) {
+        .composition__picture--2 {
+          left: 50%;
+          transform: translateX(-50%); } }
     .composition__picture--3 {
       right: 5.5rem;
       top: 10rem; }
+      @media (max-width: 56.25em) {
+        .composition__picture--3 {
+          right: 0; } }
     .composition__picture--4 {
       left: 35%;
       top: 25rem; }
+      @media (max-width: 56.25em) {
+        .composition__picture--4 {
+          left: 50%;
+          transform: translateX(-50%); } }
 
 .card {
   perspective: 150rem;

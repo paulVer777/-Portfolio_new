@@ -1,39 +1,40 @@
-
 .composition {
   position: relative;
   height: 20rem;
-
-   margin-bottom: 15rem;
-
-
+  @include respond (tab-port) {
+    margin-bottom: 27rem;
+  }
   &__picture {
-
     width: 20%;
     position: absolute;
     outline: .2rem solid $color-green-light;
     outline-offset: 2rem; //distance beetwen frame and element
-
     &--1 {
       left: 0;
       top: 10rem;
-
     }
-
     &--2 {
       left: 35%;
       top: -5rem;
-
+      @include respond (tab-port) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
-
     &--3 {
       right: 5.5rem;
       top: 10rem;
+      @include respond (tab-port) {
+        right: 0;
+      }
     }
     &--4 {
       left: 35%;
       top: 25rem;
+      @include respond (tab-port) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
-
   }
-
 }

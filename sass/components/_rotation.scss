@@ -1,11 +1,19 @@
-
-.rotation{
-
+.rotation {
   display: inline-block;
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
   position: relative;
-  animation: planet 5s infinite cubic-bezier(.99,1,0,-0.01);
+  animation: planet 5s infinite cubic-bezier(.99, 1, 0, -0.01);
+ 
+  &__img {
+   width: 2rem;
 
+  }
+  &--tech {
+    @include respond (phone) {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
 }
