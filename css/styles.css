@@ -133,14 +133,18 @@ body {
 .heading-secondary {
   font-size: 4rem;
   font-weight: lighter; }
+  .heading-secondary--tech {
+    transform: translateY(2rem) translateX(-1rem); }
+    @media (max-width: 37.5em) {
+      .heading-secondary--tech {
+        transform: translate(0);
+        margin-bottom: 1rem; } }
   .heading-secondary--bg {
     display: inline-block;
     background-image: linear-gradient(to right bottom, #10ac84, rgba(46, 213, 115, 0.8));
     color: transparent;
     -webkit-background-clip: text;
     letter-spacing: 5px; }
-    .heading-secondary--bg-tech {
-      transform: translateY(1rem) translateX(-1rem); }
 
 .heading-tertiary {
   font-size: 2rem;
@@ -479,7 +483,7 @@ body {
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5); }
 
 .footer {
-  padding: 10rem 0 1rem 0;
+  padding: 10rem 3rem 1rem 3rem;
   background-image: linear-gradient(to right bottom, rgba(16, 172, 132, 0.7), rgba(16, 172, 132, 0.7)), url(../img/matrix.jpg);
   background-size: cover;
   font-weight: 400;
@@ -488,11 +492,19 @@ body {
   .footer__navigation {
     margin-right: 4rem;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        float: none;
+        margin: 0; } }
     .footer__navigation ul {
       list-style: none;
       display: inline-block;
       border-top: 2px solid #F1F2F6;
       padding-top: 1rem; }
+      @media (max-width: 56.25em) {
+        .footer__navigation ul {
+          display: block;
+          text-align: center; } }
       .footer__navigation ul li {
         display: inline-block; }
         .footer__navigation ul li a:link, .footer__navigation ul li a:visited {
@@ -510,6 +522,11 @@ body {
     padding: 1rem;
     display: inline-block;
     border-top: 2px solid #F1F2F6; }
+    @media (max-width: 56.25em) {
+      .footer__rights {
+        display: block;
+        text-align: center;
+        margin: 0; } }
   .footer__paragraph {
     text-align: center;
     letter-spacing: .7rem; }

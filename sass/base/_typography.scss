@@ -1,6 +1,4 @@
-
 body {
-
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
   line-height: 1.7;
@@ -8,38 +6,33 @@ body {
 }
 
 .heading-primary {
-
   font-size: 5rem;
   letter-spacing: .4rem;
   animation: moveInLeft 1.5s ease-in;
   color: white;
-
-@include respond(phone){
-
-font-size: 3.5rem;
-letter-spacing: .1rem;
-}
-
-
+  @include respond(phone) {
+    font-size: 3.5rem;
+    letter-spacing: .1rem;
+  }
 }
 
 .heading-secondary {
   font-size: 4rem;
   font-weight: lighter;
-
+  &--tech {
+    transform: translateY(2rem) translateX(-1rem);
+    @include respond (phone) {
+      transform: translate(0);
+      margin-bottom: 1rem;
+    }
+  }
   &--bg {
     display: $inline-block;
     background-image: linear-gradient(to right bottom, rgba(16, 172, 132, 1.0), rgba(46, 213, 115, .8));
     color: transparent;
     -webkit-background-clip: text;
     letter-spacing: 5px;
-
-    &-tech {
-      transform: translateY(1rem) translateX(-1rem);
-    }
-
   }
-
 }
 
 .heading-tertiary {
@@ -49,5 +42,4 @@ letter-spacing: .1rem;
 
 .paragraph {
   margin-bottom: 1rem;
-
 }
