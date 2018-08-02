@@ -12,7 +12,7 @@
         right: 0;
         top: 50%;
         text-decoration: none;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         font-weight: bolder;
         @include respond (phone) {
             display: none;
@@ -70,7 +70,9 @@
             transform: translate(-50%,250% )
         }
     }
-    &__checkbox {}
+    &__checkbox {
+        display:none;
+    }
     &__icon {
         // display: inline-block;
         width: 3rem;
@@ -83,7 +85,7 @@
     }
     &__checkbox:checked~&__list {
         display: initial;
-        transform: translate(0);
+        transform: translateY(2.5rem);
         display: block;
         position: relative;
         left: 0; //  background-image: linear-gradient(to right bottom, rgba($color-green-light,1) rgba($color-green-dark,1));
