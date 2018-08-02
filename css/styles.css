@@ -617,11 +617,21 @@ body {
       .navigation__list {
         display: none; } }
   .navigation__item {
-    display: inline-block;
-    margin-right: 2rem; }
-  .navigation__link:link, .navigation__link:visited {
-    color: white;
-    text-decoration: none; }
+    display: inline-block; }
+    .navigation__item:last-child {
+      margin-right: 2rem; }
+  .navigation__link {
+    display: block;
+    border-bottom: 1px solid transparent;
+    padding: 1rem;
+    transition: all .5s;
+    border-radius: 3px; }
+    .navigation__link:link, .navigation__link:visited {
+      color: #fff;
+      text-decoration: none; }
+    .navigation__link:hover {
+      background-color: #fff;
+      color: #10AC84; }
   .navigation__label {
     font-size: 2rem;
     display: inline-block;
@@ -634,6 +644,10 @@ body {
     z-index: 100000;
     right: 4rem;
     visibility: hidden; }
+    .navigation__label:hover {
+      cursor: pointer; }
+    .navigation__label:hover .navigation__label::before {
+      background-color: black; }
     @media (max-width: 37.5em) {
       .navigation__label {
         visibility: visible; } }
@@ -682,6 +696,7 @@ body {
     .navigation__checkbox:checked ~ .navigation__list .navigation__item {
       display: block;
       margin-left: 1rem;
+      margin-right: 1rem;
       padding: 1rem 0; }
       .navigation__checkbox:checked ~ .navigation__list .navigation__item:not(:last-child) {
         border-bottom: 1px solid #fff; }

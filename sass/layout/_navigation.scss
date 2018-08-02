@@ -7,7 +7,6 @@
     z-index: 1000;
     &__list {
         transform: translateY(-50%);
-        
         position: absolute;
         right: 0;
         top: 50%;
@@ -20,13 +19,26 @@
     }
     &__item {
         display: inline-block;
-        margin-right: 2rem;
+
+        &:last-child{
+            margin-right: 2rem;
+        }
     }
     &__link {
+        display: block;
+        border-bottom: 1px solid transparent;
+        padding: 1rem;
+        transition: all .5s;
+        border-radius: 3px;
         &:link,
         &:visited {
-            color: white;
+            color: $color-white;
             text-decoration: none;
+        }
+        &:hover {
+            // border-bottom: 1px solid $color-white;
+            background-color: $color-white;
+            color: $color-green-dark;
         }
     }
     &__label {
@@ -34,14 +46,22 @@
         display: inline-block;
         width: 5rem;
         height: 4rem;
-        top:50%;
-        transform:translateY(-50%);
-        // background-color:$color-white;
+        top: 50%;
+        transform: translateY(-50%); // background-color:$color-white;
         border: 1px solid $color-white-2;
         position: absolute;
         z-index: 100000;
         right: 4rem;
         visibility: hidden;
+
+        &:hover{
+            cursor: pointer;
+        }
+        &:hover &::before{
+            background-color: black;
+        }
+
+
         @include respond (phone) {
             visibility: visible
         }
@@ -67,11 +87,11 @@
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%,250% )
+            transform: translate(-50%, 250%)
         }
     }
     &__checkbox {
-        display:none;
+        display: none;
     }
     &__icon {
         // display: inline-block;
@@ -95,11 +115,19 @@
         font-weight: bolder;
         & .navigation__item {
             display: block;
+            
             margin-left: 1rem;
+            margin-right: 1rem;
             padding: 1rem 0;
             &:not(:last-child) {
                 border-bottom: 1px solid $color-white;
             }
+         & .navigation__link{
+           
+                
+            
+         }
+
         }
     }
 }
