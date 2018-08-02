@@ -19,8 +19,7 @@
     }
     &__item {
         display: inline-block;
-
-        &:last-child{
+        &:last-child {
             margin-right: 2rem;
         }
     }
@@ -53,15 +52,15 @@
         z-index: 100000;
         right: 4rem;
         visibility: hidden;
-
-        &:hover{
+        &:hover {
             cursor: pointer;
         }
-        &:hover &::before{
-            background-color: black;
+        &:hover::before {
+            transform: translate(-50%, -450%);
         }
-
-
+        &:hover::after {
+            transform: translate(-50%, 350%);
+        }
         @include respond (phone) {
             visibility: visible
         }
@@ -76,6 +75,7 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -350%);
+            transition: all .7s;
         }
         &::after {
             content: "";
@@ -87,7 +87,8 @@
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%, 250%)
+            transform: translate(-50%, 250%);
+            transition: all .7s;
         }
     }
     &__checkbox {
@@ -115,19 +116,21 @@
         font-weight: bolder;
         & .navigation__item {
             display: block;
-            
             margin-left: 1rem;
             margin-right: 1rem;
             padding: 1rem 0;
             &:not(:last-child) {
                 border-bottom: 1px solid $color-white;
             }
-         & .navigation__link{
-           
-                
-            
-         }
-
         }
+    } //////Navigation button | transformation into cross///////
+    &__checkbox:checked+&__label &__icon {
+        display: none;
     }
+    &__checkbox:checked+&__label::before {
+        transform: translate(-50%, -50%) rotate(130deg);
+    }
+    &__checkbox:checked+&__label::after {
+        transform: translate(-50%, -50%) rotate(-130deg);
+    } ////////////////////////////////////////////////////////
 }
