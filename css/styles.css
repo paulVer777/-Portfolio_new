@@ -154,10 +154,10 @@ body {
   margin-bottom: 1rem; }
 
 .section-about {
-  padding: 15rem 0 25rem 0;
+  padding: 20rem 0 25rem 0;
   font-size: 1.8rem;
   background-color: #f1f2f6;
-  margin-top: -10rem; }
+  margin-top: -15rem; }
   .section-about .about-text {
     padding: 2rem; }
     @media (max-width: 37.5em) {
